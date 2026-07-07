@@ -1,0 +1,91 @@
+{
+ "seeds": [
+  42,
+  101,
+  202,
+  303,
+  404
+ ],
+ "results": {
+  "main": {
+   "cib_multiview_blend": {
+    "nmi": {
+     "mean": 0.8348,
+     "std": 0.0072
+    },
+    "ari": {
+     "mean": 0.4634,
+     "std": 0.0181
+    },
+    "b3f": {
+     "mean": 0.5058,
+     "std": 0.0229
+    },
+    "attrib_hungarian": {
+     "mean": 0.448,
+     "std": 0.0229
+    },
+    "view": null
+   },
+   "cib_view_selected": {
+    "nmi": {
+     "mean": 0.9906,
+     "std": 0.0011
+    },
+    "ari": {
+     "mean": 0.9872,
+     "std": 0.0024
+    },
+    "b3f": {
+     "mean": 0.9718,
+     "std": 0.0029
+    },
+    "attrib_hungarian": {
+     "mean": 0.9594,
+     "std": 0.004
+    },
+    "view": "interaction"
+   }
+  },
+  "twotype": {
+   "cib_multiview_blend": {
+    "nmi": {
+     "mean": 0.6898,
+     "std": 0.0066
+    },
+    "ari": {
+     "mean": 0.2722,
+     "std": 0.0123
+    },
+    "b3f": {
+     "mean": 0.327,
+     "std": 0.0113
+    },
+    "attrib_hungarian": {
+     "mean": 0.3356,
+     "std": 0.0188
+    },
+    "view": null
+   },
+   "cib_view_selected": {
+    "nmi": {
+     "mean": 0.8726,
+     "std": 0.0005
+    },
+    "ari": {
+     "mean": 0.6546,
+     "std": 0.0015
+    },
+    "b3f": {
+     "mean": 0.6726,
+     "std": 0.0036
+    },
+    "attrib_hungarian": {
+     "mean": 0.5142,
+     "std": 0.0029
+    },
+    "view": "interaction"
+   }
+  }
+ }
+}

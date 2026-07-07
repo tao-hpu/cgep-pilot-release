@@ -1,0 +1,34 @@
+{
+  "by_type": {
+    "account_matrix": {
+      "interaction": 0.985,
+      "citation": 0.0,
+      "content-sim": 0.003,
+      "fusion": 0.98
+    },
+    "citation_stuffing": {
+      "interaction": 0.0,
+      "citation": 1.0,
+      "content-sim": -0.0,
+      "fusion": 1.0
+    },
+    "parasite_content": {
+      "interaction": 0.0,
+      "citation": 0.0,
+      "content-sim": 0.504,
+      "fusion": 0.504
+    },
+    "fake_review_cluster": {
+      "interaction": 0.0,
+      "citation": 0.0,
+      "content-sim": 0.306,
+      "fusion": 0.306
+    }
+  },
+  "pooled": {
+    "interaction": 0.389,
+    "citation": 0.398,
+    "content-sim": 0.09,
+    "fusion": 0.503
+  }
+}

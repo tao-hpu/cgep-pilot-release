@@ -1,0 +1,97 @@
+{
+ "seeds": [
+  42,
+  101,
+  202
+ ],
+ "models": {
+  "gpt-4o": {
+   "per_class_f1": {
+    "organic": {
+     "mean": 0.465,
+     "std": 0.0069
+    },
+    "account_matrix": {
+     "mean": 0.5657,
+     "std": 0.0849
+    },
+    "citation_stuffing": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "parasite_content": {
+     "mean": 1.0,
+     "std": 0.0
+    },
+    "hidden_injection": {
+     "mean": 1.0,
+     "std": 0.0
+    },
+    "fake_review_cluster": {
+     "mean": 0.013,
+     "std": 0.0225
+    }
+   },
+   "six_way_acc": {
+    "mean": 0.581,
+    "std": 0.0159
+   },
+   "binary_f1": {
+    "mean": 0.704,
+    "std": 0.0144
+   },
+   "binary_precision": {
+    "mean": 0.9977,
+    "std": 0.004
+   },
+   "binary_recall": {
+    "mean": 0.544,
+    "std": 0.0183
+   }
+  },
+  "claude-sonnet-5": {
+   "per_class_f1": {
+    "organic": {
+     "mean": 0.4937,
+     "std": 0.0029
+    },
+    "account_matrix": {
+     "mean": 0.5913,
+     "std": 0.046
+    },
+    "citation_stuffing": {
+     "mean": 0.0,
+     "std": 0.0
+    },
+    "parasite_content": {
+     "mean": 0.901,
+     "std": 0.0208
+    },
+    "hidden_injection": {
+     "mean": 1.0,
+     "std": 0.0
+    },
+    "fake_review_cluster": {
+     "mean": 0.4837,
+     "std": 0.0776
+    }
+   },
+   "six_way_acc": {
+    "mean": 0.611,
+    "std": 0.0101
+   },
+   "binary_f1": {
+    "mean": 0.774,
+    "std": 0.007
+   },
+   "binary_precision": {
+    "mean": 0.97,
+    "std": 0.005
+   },
+   "binary_recall": {
+    "mean": 0.644,
+    "std": 0.012
+   }
+  }
+ }
+}

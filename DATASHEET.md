@@ -103,8 +103,9 @@ seed, and `code/multiseed.py` reproduces the full five-seed sweep.
 
 **What has the dataset been used for?**
 The synthetic provenance pilot in the CGEP preprint: detection, cluster recovery, seller
-attribution, a substrate-detectability matrix, a learned-GNN comparison, confidence-gated
-substrate fusion, and authority-gap routing.
+attribution, a substrate-detectability matrix, a learned-GNN comparison, a multi-view CIB
+baseline, a zero-shot LLM-as-detector baseline, confidence-gated substrate fusion, and
+authority-gap routing.
 
 **What (else) could the dataset be used for?**
 Prototyping and unit-testing coordinated-inauthentic-behavior detectors, community-detection

@@ -1,0 +1,58 @@
+{
+  "by_type": {
+    "account_matrix": {
+      "n": 1935,
+      "interaction": {
+        "nmi": 0.989,
+        "ari": 0.987,
+        "b3f": 0.971
+      },
+      "fingerprint": {
+        "nmi": 0.195,
+        "ari": -0.001,
+        "b3f": 0.041
+      },
+      "fusion": {
+        "nmi": 0.976,
+        "ari": 0.978,
+        "b3f": 0.944
+      }
+    },
+    "fake_review_cluster": {
+      "n": 1935,
+      "interaction": {
+        "nmi": 0.754,
+        "ari": 0.0,
+        "b3f": 0.13
+      },
+      "fingerprint": {
+        "nmi": 0.581,
+        "ari": 0.232,
+        "b3f": 0.288
+      },
+      "fusion": {
+        "nmi": 0.581,
+        "ari": 0.232,
+        "b3f": 0.288
+      }
+    }
+  },
+  "pooled": {
+    "n": 3870,
+    "interaction": {
+      "nmi": 0.873,
+      "ari": 0.654,
+      "b3f": 0.673
+    },
+    "fingerprint": {
+      "nmi": 0.361,
+      "ari": 0.064,
+      "b3f": 0.102
+    },
+    "fusion": {
+      "nmi": 0.808,
+      "ari": 0.441,
+      "b3f": 0.64
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "provenance": {
+    "interaction": {
+      "account_matrix": 0.988,
+      "citation_stuffing": 0.0,
+      "parasite_content": 0.0,
+      "fake_review_cluster": 0.0
+    },
+    "citation": {
+      "account_matrix": 0.0,
+      "citation_stuffing": 1.0,
+      "parasite_content": 0.0,
+      "fake_review_cluster": 0.0
+    },
+    "content-sim": {
+      "account_matrix": 0.003,
+      "citation_stuffing": -0.002,
+      "parasite_content": 0.553,
+      "fake_review_cluster": 0.362
+    }
+  },
+  "detection": {
+    "dom-flag@(4)": 1.0,
+    "authority-gap@(3)": 1.0,
+    "dom-flag@organic(FP)": 0.0
+  }
+}

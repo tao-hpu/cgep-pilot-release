@@ -1,0 +1,153 @@
+{
+  "n_items": 6450,
+  "n_manip": 3225,
+  "t1": {
+    "content_logreg": {
+      "P": 0.946,
+      "R": 0.927,
+      "F1": 0.936
+    },
+    "graph_components": {
+      "P": 1.0,
+      "R": 0.923,
+      "F1": 0.96
+    }
+  },
+  "t2": {
+    "content_kmeans": {
+      "nmi": 0.494,
+      "ari": 0.089,
+      "b3f": 0.132
+    },
+    "graph_components": {
+      "nmi": 0.989,
+      "ari": 0.984,
+      "b3f": 0.967
+    },
+    "graph_louvain": {
+      "nmi": 0.989,
+      "ari": 0.984,
+      "b3f": 0.967
+    },
+    "graph_labelprop": {
+      "nmi": 0.949,
+      "ari": 0.818,
+      "b3f": 0.821
+    },
+    "hybrid": {
+      "nmi": 0.965,
+      "ari": 0.935,
+      "b3f": 0.911
+    }
+  },
+  "t3": {
+    "content_kmeans": 0.181,
+    "graph_louvain": 1.0,
+    "hybrid": 0.933
+  },
+  "by_size": {
+    "3": {
+      "n": 225,
+      "content_kmeans": {
+        "nmi": 0.739,
+        "ari": 0.095,
+        "b3f": 0.388
+      },
+      "graph_components": {
+        "nmi": 0.921,
+        "ari": 0.446,
+        "b3f": 0.689
+      },
+      "graph_louvain": {
+        "nmi": 0.921,
+        "ari": 0.446,
+        "b3f": 0.689
+      },
+      "graph_labelprop": {
+        "nmi": 0.921,
+        "ari": 0.446,
+        "b3f": 0.689
+      },
+      "hybrid": {
+        "nmi": 0.829,
+        "ari": 0.201,
+        "b3f": 0.547
+      }
+    },
+    "10": {
+      "n": 750,
+      "content_kmeans": {
+        "nmi": 0.58,
+        "ari": 0.113,
+        "b3f": 0.224
+      },
+      "graph_components": {
+        "nmi": 0.986,
+        "ari": 0.96,
+        "b3f": 0.965
+      },
+      "graph_louvain": {
+        "nmi": 0.986,
+        "ari": 0.96,
+        "b3f": 0.965
+      },
+      "graph_labelprop": {
+        "nmi": 0.949,
+        "ari": 0.81,
+        "b3f": 0.834
+      },
+      "hybrid": {
+        "nmi": 0.98,
+        "ari": 0.946,
+        "b3f": 0.954
+      }
+    },
+    "30": {
+      "n": 2250,
+      "content_kmeans": {
+        "nmi": 0.489,
+        "ari": 0.129,
+        "b3f": 0.172
+      },
+      "graph_components": {
+        "nmi": 0.994,
+        "ari": 0.989,
+        "b3f": 0.989
+      },
+      "graph_louvain": {
+        "nmi": 0.994,
+        "ari": 0.989,
+        "b3f": 0.989
+      },
+      "graph_labelprop": {
+        "nmi": 0.94,
+        "ari": 0.82,
+        "b3f": 0.829
+      },
+      "hybrid": {
+        "nmi": 0.993,
+        "ari": 0.987,
+        "b3f": 0.987
+      }
+    }
+  },
+  "by_homog": {
+    "high": {
+      "content_recall": 1.0,
+      "n": 1075
+    },
+    "med": {
+      "content_recall": 0.976,
+      "n": 1075
+    },
+    "low": {
+      "content_recall": 0.804,
+      "n": 1075
+    }
+  },
+  "t3_hungarian": {
+    "content_kmeans": 0.17,
+    "graph_louvain": 0.953,
+    "hybrid": 0.931
+  }
+}

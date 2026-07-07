@@ -1,0 +1,17 @@
+{
+ "n_items": 7740,
+ "n_manip": 3870,
+ "cib_multiview_blend": {
+  "nmi": 0.7,
+  "ari": 0.294,
+  "b3f": 0.345,
+  "attrib_hungarian": 0.363
+ },
+ "cib_view_selected": {
+  "nmi": 0.872,
+  "ari": 0.653,
+  "b3f": 0.668,
+  "attrib_hungarian": 0.511,
+  "view": "interaction"
+ }
+}

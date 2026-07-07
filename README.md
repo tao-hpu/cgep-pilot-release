@@ -55,17 +55,23 @@ release/
     provenance_eval.py            detection / cluster recovery / attribution (main set)
     provenance_eval_multitype.py  substrate crossover (two-technique set)
     gnn_baseline.py               learned GNN vs. classical community detection
+    cib_baseline.py               multi-view CIB baseline (blended vs. view-selected)
+    llm_detector.py               zero-shot LLM-as-detector baseline (needs an API key)
     fusion_eval.py                confidence-gated substrate fusion (five-technique set)
     taxonomy_matrix.py            substrate x technique detectability matrix
     routing_sep.py                authority-gap routing for content-substrate types
     multiseed.py                  5-seed sweep driver, aggregates mean/std
   results/
-    results_multiseed.json   5-seed aggregate; the numeric anchor for all paper claims
+    results_multiseed.json       5-seed aggregate; the numeric anchor for all paper claims
+    results_cib_multiseed.json   5-seed aggregate for the CIB baseline
+    results_llm_multiseed.json   LLM baseline, mean over three sampling seeds
+    per_seed/                    per-seed results (5 dataset seeds x 8 experiments)
 ```
 
 `data/` holds the seed-42 realizations. `results/results_multiseed.json` holds the
 mean and standard deviation over five dataset-generation seeds (42, 101, 202, 303, 404);
-this is the source of truth for the numbers below.
+this is the source of truth for the numbers below. `results/per_seed/` holds every
+individual per-seed run behind those aggregates.
 
 ### Data schema
 
@@ -87,9 +93,11 @@ label is balanced by construction.
 ## Reproducing the numbers
 
 Requires Python 3.9+ with `numpy`, `scikit-learn`, `networkx`, and `scipy`. The GNN
-baseline (`gnn_baseline.py`) additionally needs `torch` and `torch-geometric`; the other
-six scripts do not. Run all commands **from `code/`** (scripts resolve `../data/`
-relatively, and `gnn_baseline.py` imports `provenance_eval` as a sibling module).
+baseline (`gnn_baseline.py`) additionally needs `torch` and `torch-geometric`; the LLM
+baseline (`llm_detector.py`) needs `requests` plus an OpenAI-compatible API endpoint
+(`LLM_API_BASE` / `LLM_API_KEY` in a dotenv file passed via `--env`). The remaining
+scripts need only the base four. Run all commands **from `code/`** (scripts resolve
+`../data/` relatively, and several scripts import `provenance_eval` as a sibling module).
 
 Evaluate the provided seed-42 data:
 
@@ -98,9 +106,19 @@ cd code
 python3 provenance_eval.py            --data ../data/seed42_main.json    --out results.json
 python3 provenance_eval_multitype.py  --data ../data/seed42_twotype.json --out results_multitype.json
 python3 gnn_baseline.py               --data ../data/seed42_twotype.json --out results_gnn.json
+python3 cib_baseline.py               --data ../data/seed42_main.json    --out results_cib_main.json
+python3 cib_baseline.py               --data ../data/seed42_twotype.json --out results_cib_twotype.json
 python3 fusion_eval.py                --data ../data/seed42_fivetype.json --out results_fusion.json
 python3 taxonomy_matrix.py            --data ../data/seed42_fivetype.json --out results_matrix.json
 python3 routing_sep.py                --data ../data/seed42_fivetype.json --out results_routing.json
+```
+
+The LLM baseline reads `../data/seed42_fivetype.json` directly and needs API access
+(so its numbers are not free to reproduce; the shipped results are in
+`results/results_llm_multiseed.json`):
+
+```bash
+python3 llm_detector.py --env /path/to/.env --seed 42 --out results_llm.json
 ```
 
 Regenerate the data from scratch (each realization is a different `--types` / `--per-cell`

@@ -1,0 +1,321 @@
+{
+  "n_items": 1548,
+  "n_by_type": {
+    "parasite_content": 774,
+    "fake_review_cluster": 774
+  },
+  "baseline": {
+    "pooled": {
+      "nmi": 0.749,
+      "ari": 0.428,
+      "b3f": 0.527
+    },
+    "by_type": {
+      "parasite_content": {
+        "nmi": 0.854,
+        "ari": 0.696,
+        "b3f": 0.731
+      },
+      "fake_review_cluster": {
+        "nmi": 0.724,
+        "ari": 0.469,
+        "b3f": 0.57
+      }
+    }
+  },
+  "soft_append": {
+    "w0.3": {
+      "pooled": {
+        "nmi": 0.788,
+        "ari": 0.492,
+        "b3f": 0.599
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.875,
+          "ari": 0.721,
+          "b3f": 0.768
+        },
+        "fake_review_cluster": {
+          "nmi": 0.745,
+          "ari": 0.488,
+          "b3f": 0.602
+        }
+      }
+    },
+    "w0.6": {
+      "pooled": {
+        "nmi": 0.819,
+        "ari": 0.5,
+        "b3f": 0.662
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.855,
+          "ari": 0.642,
+          "b3f": 0.735
+        },
+        "fake_review_cluster": {
+          "nmi": 0.733,
+          "ari": 0.388,
+          "b3f": 0.61
+        }
+      }
+    }
+  },
+  "thresholds": {
+    "median": 0.179,
+    "otsu": 0.001650390625,
+    "gmm": 0.007205643409887726,
+    "midband": 0.179
+  },
+  "routing": {
+    "median": {
+      "tau": 0.179,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled": {
+        "nmi": 0.843,
+        "ari": 0.624,
+        "b3f": 0.689
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.866,
+          "ari": 0.694,
+          "b3f": 0.749
+        },
+        "fake_review_cluster": {
+          "nmi": 0.764,
+          "ari": 0.533,
+          "b3f": 0.625
+        }
+      }
+    },
+    "otsu": {
+      "tau": 0.0017,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled": {
+        "nmi": 0.843,
+        "ari": 0.624,
+        "b3f": 0.689
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.866,
+          "ari": 0.694,
+          "b3f": 0.749
+        },
+        "fake_review_cluster": {
+          "nmi": 0.764,
+          "ari": 0.533,
+          "b3f": 0.625
+        }
+      }
+    },
+    "gmm": {
+      "tau": 0.0072,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled": {
+        "nmi": 0.843,
+        "ari": 0.624,
+        "b3f": 0.689
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.866,
+          "ari": 0.694,
+          "b3f": 0.749
+        },
+        "fake_review_cluster": {
+          "nmi": 0.764,
+          "ari": 0.533,
+          "b3f": 0.625
+        }
+      }
+    },
+    "midband": {
+      "tau": 0.179,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled": {
+        "nmi": 0.843,
+        "ari": 0.624,
+        "b3f": 0.689
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.866,
+          "ari": 0.694,
+          "b3f": 0.749
+        },
+        "fake_review_cluster": {
+          "nmi": 0.764,
+          "ari": 0.533,
+          "b3f": 0.625
+        }
+      }
+    }
+  },
+  "sweep": [
+    {
+      "tau": 0.0,
+      "hi_n": 1548,
+      "lo_n": 0,
+      "pooled_ari": 0.428,
+      "pooled_nmi": 0.749,
+      "pooled_b3f": 0.527
+    },
+    {
+      "tau": 0.05,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.624,
+      "pooled_nmi": 0.843,
+      "pooled_b3f": 0.689
+    },
+    {
+      "tau": 0.1,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.624,
+      "pooled_nmi": 0.843,
+      "pooled_b3f": 0.689
+    },
+    {
+      "tau": 0.15,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.624,
+      "pooled_nmi": 0.843,
+      "pooled_b3f": 0.689
+    },
+    {
+      "tau": 0.2,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.624,
+      "pooled_nmi": 0.843,
+      "pooled_b3f": 0.689
+    },
+    {
+      "tau": 0.25,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.624,
+      "pooled_nmi": 0.843,
+      "pooled_b3f": 0.689
+    },
+    {
+      "tau": 0.3,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.624,
+      "pooled_nmi": 0.843,
+      "pooled_b3f": 0.689
+    },
+    {
+      "tau": 0.35,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.624,
+      "pooled_nmi": 0.843,
+      "pooled_b3f": 0.689
+    },
+    {
+      "tau": 0.4,
+      "hi_n": 760,
+      "lo_n": 788,
+      "pooled_ari": 0.613,
+      "pooled_nmi": 0.84,
+      "pooled_b3f": 0.684
+    },
+    {
+      "tau": 0.45,
+      "hi_n": 721,
+      "lo_n": 827,
+      "pooled_ari": 0.58,
+      "pooled_nmi": 0.825,
+      "pooled_b3f": 0.663
+    },
+    {
+      "tau": 0.5,
+      "hi_n": 636,
+      "lo_n": 912,
+      "pooled_ari": 0.506,
+      "pooled_nmi": 0.79,
+      "pooled_b3f": 0.593
+    },
+    {
+      "tau": 0.55,
+      "hi_n": 530,
+      "lo_n": 1018,
+      "pooled_ari": 0.46,
+      "pooled_nmi": 0.772,
+      "pooled_b3f": 0.553
+    },
+    {
+      "tau": 0.6,
+      "hi_n": 391,
+      "lo_n": 1157,
+      "pooled_ari": 0.393,
+      "pooled_nmi": 0.754,
+      "pooled_b3f": 0.518
+    },
+    {
+      "tau": 0.65,
+      "hi_n": 256,
+      "lo_n": 1292,
+      "pooled_ari": 0.374,
+      "pooled_nmi": 0.742,
+      "pooled_b3f": 0.506
+    },
+    {
+      "tau": 0.7,
+      "hi_n": 129,
+      "lo_n": 1419,
+      "pooled_ari": 0.406,
+      "pooled_nmi": 0.747,
+      "pooled_b3f": 0.529
+    }
+  ],
+  "router_purity": [
+    {
+      "tau": 0.05,
+      "hi_n": 774,
+      "hi_frac_parasite": 1.0,
+      "lo_n": 774,
+      "lo_frac_review": 1.0
+    },
+    {
+      "tau": 0.0017,
+      "hi_n": 774,
+      "hi_frac_parasite": 1.0,
+      "lo_n": 774,
+      "lo_frac_review": 1.0
+    },
+    {
+      "tau": 0.0072,
+      "hi_n": 774,
+      "hi_frac_parasite": 1.0,
+      "lo_n": 774,
+      "lo_frac_review": 1.0
+    },
+    {
+      "tau": 0.2,
+      "hi_n": 774,
+      "hi_frac_parasite": 1.0,
+      "lo_n": 774,
+      "lo_frac_review": 1.0
+    },
+    {
+      "tau": 0.3,
+      "hi_n": 774,
+      "hi_frac_parasite": 1.0,
+      "lo_n": 774,
+      "lo_frac_review": 1.0
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "n_items": 1548,
+  "n_by_type": {
+    "parasite_content": 774,
+    "fake_review_cluster": 774
+  },
+  "baseline": {
+    "pooled": {
+      "nmi": 0.774,
+      "ari": 0.477,
+      "b3f": 0.571
+    },
+    "by_type": {
+      "parasite_content": {
+        "nmi": 0.873,
+        "ari": 0.72,
+        "b3f": 0.756
+      },
+      "fake_review_cluster": {
+        "nmi": 0.739,
+        "ari": 0.523,
+        "b3f": 0.581
+      }
+    }
+  },
+  "soft_append": {
+    "w0.3": {
+      "pooled": {
+        "nmi": 0.8,
+        "ari": 0.513,
+        "b3f": 0.626
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.879,
+          "ari": 0.738,
+          "b3f": 0.774
+        },
+        "fake_review_cluster": {
+          "nmi": 0.745,
+          "ari": 0.479,
+          "b3f": 0.594
+        }
+      }
+    },
+    "w0.6": {
+      "pooled": {
+        "nmi": 0.839,
+        "ari": 0.553,
+        "b3f": 0.685
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.879,
+          "ari": 0.692,
+          "b3f": 0.766
+        },
+        "fake_review_cluster": {
+          "nmi": 0.746,
+          "ari": 0.428,
+          "b3f": 0.613
+        }
+      }
+    }
+  },
+  "thresholds": {
+    "median": 0.1835,
+    "otsu": 0.001634765625,
+    "gmm": 0.006660457362353622,
+    "midband": 0.1835
+  },
+  "routing": {
+    "median": {
+      "tau": 0.1835,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled": {
+        "nmi": 0.852,
+        "ari": 0.633,
+        "b3f": 0.711
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.888,
+          "ari": 0.745,
+          "b3f": 0.791
+        },
+        "fake_review_cluster": {
+          "nmi": 0.761,
+          "ari": 0.514,
+          "b3f": 0.63
+        }
+      }
+    },
+    "otsu": {
+      "tau": 0.0016,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled": {
+        "nmi": 0.852,
+        "ari": 0.633,
+        "b3f": 0.711
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.888,
+          "ari": 0.745,
+          "b3f": 0.791
+        },
+        "fake_review_cluster": {
+          "nmi": 0.761,
+          "ari": 0.514,
+          "b3f": 0.63
+        }
+      }
+    },
+    "gmm": {
+      "tau": 0.0067,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled": {
+        "nmi": 0.852,
+        "ari": 0.633,
+        "b3f": 0.711
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.888,
+          "ari": 0.745,
+          "b3f": 0.791
+        },
+        "fake_review_cluster": {
+          "nmi": 0.761,
+          "ari": 0.514,
+          "b3f": 0.63
+        }
+      }
+    },
+    "midband": {
+      "tau": 0.1835,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled": {
+        "nmi": 0.852,
+        "ari": 0.633,
+        "b3f": 0.711
+      },
+      "by_type": {
+        "parasite_content": {
+          "nmi": 0.888,
+          "ari": 0.745,
+          "b3f": 0.791
+        },
+        "fake_review_cluster": {
+          "nmi": 0.761,
+          "ari": 0.514,
+          "b3f": 0.63
+        }
+      }
+    }
+  },
+  "sweep": [
+    {
+      "tau": 0.0,
+      "hi_n": 1548,
+      "lo_n": 0,
+      "pooled_ari": 0.477,
+      "pooled_nmi": 0.774,
+      "pooled_b3f": 0.571
+    },
+    {
+      "tau": 0.05,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.633,
+      "pooled_nmi": 0.852,
+      "pooled_b3f": 0.711
+    },
+    {
+      "tau": 0.1,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.633,
+      "pooled_nmi": 0.852,
+      "pooled_b3f": 0.711
+    },
+    {
+      "tau": 0.15,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.633,
+      "pooled_nmi": 0.852,
+      "pooled_b3f": 0.711
+    },
+    {
+      "tau": 0.2,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.633,
+      "pooled_nmi": 0.852,
+      "pooled_b3f": 0.711
+    },
+    {
+      "tau": 0.25,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.633,
+      "pooled_nmi": 0.852,
+      "pooled_b3f": 0.711
+    },
+    {
+      "tau": 0.3,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.633,
+      "pooled_nmi": 0.852,
+      "pooled_b3f": 0.711
+    },
+    {
+      "tau": 0.35,
+      "hi_n": 774,
+      "lo_n": 774,
+      "pooled_ari": 0.633,
+      "pooled_nmi": 0.852,
+      "pooled_b3f": 0.711
+    },
+    {
+      "tau": 0.4,
+      "hi_n": 760,
+      "lo_n": 788,
+      "pooled_ari": 0.637,
+      "pooled_nmi": 0.852,
+      "pooled_b3f": 0.707
+    },
+    {
+      "tau": 0.45,
+      "hi_n": 723,
+      "lo_n": 825,
+      "pooled_ari": 0.594,
+      "pooled_nmi": 0.835,
+      "pooled_b3f": 0.68
+    },
+    {
+      "tau": 0.5,
+      "hi_n": 645,
+      "lo_n": 903,
+      "pooled_ari": 0.539,
+      "pooled_nmi": 0.815,
+      "pooled_b3f": 0.633
+    },
+    {
+      "tau": 0.55,
+      "hi_n": 543,
+      "lo_n": 1005,
+      "pooled_ari": 0.488,
+      "pooled_nmi": 0.793,
+      "pooled_b3f": 0.582
+    },
+    {
+      "tau": 0.6,
+      "hi_n": 406,
+      "lo_n": 1142,
+      "pooled_ari": 0.439,
+      "pooled_nmi": 0.779,
+      "pooled_b3f": 0.55
+    },
+    {
+      "tau": 0.65,
+      "hi_n": 262,
+      "lo_n": 1286,
+      "pooled_ari": 0.396,
+      "pooled_nmi": 0.757,
+      "pooled_b3f": 0.523
+    },
+    {
+      "tau": 0.7,
+      "hi_n": 152,
+      "lo_n": 1396,
+      "pooled_ari": 0.417,
+      "pooled_nmi": 0.759,
+      "pooled_b3f": 0.544
+    }
+  ],
+  "router_purity": [
+    {
+      "tau": 0.05,
+      "hi_n": 774,
+      "hi_frac_parasite": 1.0,
+      "lo_n": 774,
+      "lo_frac_review": 1.0
+    },
+    {
+      "tau": 0.0016,
+      "hi_n": 774,
+      "hi_frac_parasite": 1.0,
+      "lo_n": 774,
+      "lo_frac_review": 1.0
+    },
+    {
+      "tau": 0.0067,
+      "hi_n": 774,
+      "hi_frac_parasite": 1.0,
+      "lo_n": 774,
+      "lo_frac_review": 1.0
+    },
+    {
+      "tau": 0.2,
+      "hi_n": 774,
+      "hi_frac_parasite": 1.0,
+      "lo_n": 774,
+      "lo_frac_review": 1.0
+    },
+    {
+      "tau": 0.3,
+      "hi_n": 774,
+      "hi_frac_parasite": 1.0,
+      "lo_n": 774,
+      "lo_frac_review": 1.0
+    }
+  ]
+}

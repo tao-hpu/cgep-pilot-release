@@ -1,0 +1,134 @@
+{
+  "n_nodes": 7740,
+  "n_edges": 3689,
+  "n_manip": 3870,
+  "k": 270,
+  "features": "12-d (content4 + sig6 + host_auth + page_q)",
+  "seed": 42,
+  "t2": {
+    "feat_kmeans": {
+      "nmi": 0.517,
+      "ari": 0.093,
+      "b3f": 0.152
+    },
+    "gae_kmeans": {
+      "nmi": 0.653,
+      "ari": 0.196,
+      "b3f": 0.244
+    },
+    "dgi_kmeans": {
+      "nmi": 0.534,
+      "ari": 0.075,
+      "b3f": 0.171
+    },
+    "louvain_ref": {
+      "nmi": 0.873,
+      "ari": 0.654,
+      "b3f": 0.673
+    }
+  },
+  "t3": {
+    "feat_kmeans": 0.224,
+    "gae_kmeans": 0.33,
+    "dgi_kmeans": 0.226,
+    "louvain_ref": 1.0
+  },
+  "t3_hungarian": {
+    "feat_kmeans": 0.185,
+    "gae_kmeans": 0.277,
+    "dgi_kmeans": 0.186,
+    "louvain_ref": 0.514
+  },
+  "by_size": {
+    "feat_kmeans": {
+      "3": {
+        "n": 270,
+        "nmi": 0.783,
+        "ari": 0.101,
+        "b3f": 0.433
+      },
+      "10": {
+        "n": 900,
+        "nmi": 0.618,
+        "ari": 0.109,
+        "b3f": 0.229
+      },
+      "30": {
+        "n": 2700,
+        "nmi": 0.502,
+        "ari": 0.127,
+        "b3f": 0.176
+      }
+    },
+    "gae_kmeans": {
+      "3": {
+        "n": 270,
+        "nmi": 0.839,
+        "ari": 0.202,
+        "b3f": 0.544
+      },
+      "10": {
+        "n": 900,
+        "nmi": 0.746,
+        "ari": 0.274,
+        "b3f": 0.384
+      },
+      "30": {
+        "n": 2700,
+        "nmi": 0.646,
+        "ari": 0.239,
+        "b3f": 0.276
+      }
+    },
+    "dgi_kmeans": {
+      "3": {
+        "n": 270,
+        "nmi": 0.767,
+        "ari": 0.124,
+        "b3f": 0.449
+      },
+      "10": {
+        "n": 900,
+        "nmi": 0.634,
+        "ari": 0.135,
+        "b3f": 0.272
+      },
+      "30": {
+        "n": 2700,
+        "nmi": 0.52,
+        "ari": 0.103,
+        "b3f": 0.195
+      }
+    },
+    "louvain_ref": {
+      "3": {
+        "n": 270,
+        "nmi": 0.911,
+        "ari": 0.306,
+        "b3f": 0.625
+      },
+      "10": {
+        "n": 900,
+        "nmi": 0.882,
+        "ari": 0.633,
+        "b3f": 0.683
+      },
+      "30": {
+        "n": 2700,
+        "nmi": 0.84,
+        "ari": 0.656,
+        "b3f": 0.674
+      }
+    }
+  },
+  "loss": {
+    "gae": 0.7955,
+    "dgi": 1.2212
+  },
+  "gcn_supervised": {
+    "test_item_acc": 0.6,
+    "n_train": 1935,
+    "n_test": 1935,
+    "note": "uses ground-truth labels; upper bound, not comparable to unsupervised rows"
+  }
+}
